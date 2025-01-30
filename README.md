@@ -4,7 +4,9 @@ August 2024 Capstone Project Repository for Code:You
 # Academy Awards Analysis: Project Plan
 
 ## **1. Project Overview**
-I have been a fan of the Academy Awards Analysis project investigates trends in Oscar-winning movies to uncover patterns and correlations. The project aims to analyze data on genres, runtimes, box office performance, and other factors to answer questions like:
+I have been a fan of the Academy Awards for as long as I can remember.
+
+This analysis project investigates trends in Oscar-winning movies to uncover patterns and correlations. The project aims to analyze data on genres, runtimes, box office performance, and other factors to answer questions like:
 - What genres dominate the Academy Awards? This will be analyzed using bar charts to visualize genre distributions over time.
 - How have winning trends evolved over time? A timeline of winning genres will show shifts in preferences or themes across decades.
 - Is there a correlation between box office success and award wins? Scatter plots will be used to examine relationships between box office revenue and award outcomes, providing quantitative insights.

@@ -20,8 +20,6 @@ This analysis will provide insights through detailed visualizations and SQL-base
 
 3. Provide visual insights through bar charts, scatter plots, pivot tables, and word clouds.
 
----
-
 ## **2. Background**
 
 My love for movies began with Disney’s animated classics, where magical stories and unforgettable music captivated me. As I became more immersed in these films, I discovered the Academy Awards through Disney’s many wins and nominations. Watching my favorite movies receive Oscars sparked my curiosity about what made a film award-worthy.
@@ -153,11 +151,7 @@ To ensure alignment with project requirements, feedback will be requested on:
 
 1. Feasibility of using the TMDb API and datasets.
 2. SQL schema design and queries.
-3. Clarity of visualizations and insights.
-
-Mentor feedback will guide refinements to the plan and implementation at multiple stages. Early feedback will help validate dataset selection and API feasibility. Mid-project reviews will ensure SQL schema design and data integration align with best practices. Final feedback before submission will refine visualizations and improve clarity in data interpretation.
-
----
+3. Clarity of visualizations and insights
 
 ## **6. Timeline**
 
@@ -192,15 +186,3 @@ Mentor feedback will guide refinements to the plan and implementation at multipl
 
 - Include clear data interpretation sections in the Jupyter Notebook and README to ensure accessibility to unfamiliar audiences. For example, explain how genre distributions reflect historical trends or how correlations between box office revenue and award wins provide actionable insights.
 - Annotate code with Markdown cells and detailed comments to enhance clarity and coherence. Provide clear explanations for each step, such as data cleaning, SQL queries, and visualization choices, ensuring that all logic is transparent and easy to follow.
-
----
-
-## **Next Steps**
-
-1. Create wireframes and flowchart to support understanding.
-2. Begin Week 1 tasks: setting up APIs and gathering data.
-3. Review the plan with a mentor for feedback.
-
----
-
-This document provides a comprehensive roadmap for completing the Academy Awards Analysis project, ensuring alignment with all requirements.

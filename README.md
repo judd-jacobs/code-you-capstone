@@ -1,115 +1,138 @@
-# code-you-capstone
+# Academy Awards Analysis
 
-# Academy Awards Analysis: Project Plan
+**Author**: Judd Jacobs  
+**Date**: 2025-02-12  
+**Project Repository**: https://github.com/judd-jacobs/code-you-capstone
 
-## **1. Project Overview**
+## Project Requirements:
 
-The Academy Awards Analysis project investigates trends in Oscar-winning movies to uncover patterns and correlations. The project aims to analyze data on genres, runtimes, and box office performance, exploring how these factors interrelate to influence Academy Award outcomes. By examining their connections, we can identify patterns in winning films, such as whether certain genres are more likely to be associated with higher box office earnings or if runtime impacts critical reception.
+- Feature 1 - Read data from 2 data sources
+   - This was accomplished by...(e.g., reading in 3 csv files)
 
-- What genres dominate the Academy Awards? This will be analyzed using bar charts to visualize genre distributions over time.
-- How have winning trends evolved over time? A timeline of winning genres will show shifts in preferences or themes across decades.
-- Is there a correlation between box office success and award wins? Scatter plots will be used to examine relationships between box office revenue and award outcomes, providing quantitative insights.
+- Feature 2 - Manipulate and clean your data
+   - The data was cleaned by... (e.g., removing missing data and dropping data that was not needed, and mapping values)
 
-This analysis will provide insights through detailed visualizations and SQL-based queries, offering a comprehensive look at historical Academy Award trends.
+- Feature 3 - Visualize data
 
-### **Proposed Features:**
+   -  By utilizing the ... (e.g. `groupby`) method...(e.g. sub plots where made to reveal a gender and racial bias on citations).
 
-1. Analyze trends in Best Picture winners by genre and runtime.
+- Feature 4 - Utilized a virtual environment and include instructions in the README on how the user should run the project.
 
-2. Examine correlations between box office performance and award wins.
+- Feature 5 - Interpreted the data by annotating the code via markdown cells.
 
-3. Provide visual insights through bar charts, scatter plots, pivot tables, and word clouds.
+## Requirements
 
-## **2. Background**
+- Make Make a virtual environment on your machine (directions below)
 
-My love for movies began with Disney’s animated classics, where magical stories and unforgettable music captivated me. As I became more immersed in these films, I discovered the Academy Awards through Disney’s many wins and nominations. Watching my favorite movies receive Oscars sparked my curiosity about what made a film award-worthy.
+- From the directory pip install the requirements.txt file by running "pip install -r requirements.txt"
 
-Over time, my interest expanded beyond animation, and the Oscars became an annual tradition for me. I was drawn to the excitement of seeing which films would take home the top honors and how cinematic trends evolved over the years. This project is an exploration of the patterns behind Oscar-winning movies, blending data analysis with my lifelong love for the movies.
+- You can run `analysis.ipynb` to see the project
 
-This project is a reflection of that early enthusiasm—a fun and insightful exploration of the trends and patterns behind Oscar-winning movies. By analyzing the data behind the Academy Awards, I hope to uncover fascinating insights while recapturing some of the wonder and joy that these films have brought me over the years.
 
-## **3. Technical Insight**
+## 1. Installation & Setup Requirements
 
-This section outlines the key technologies, data sources, and methods used to analyze Academy Award-winning movies and acceptance speeches.
+### A. Clone the Repository
 
-### **Tools and Technologies:**
+```bash
+git clone https://github.com/judd-jacobs/code-you-capstone.git
+```
 
-- **Python**: Used for data cleaning, analysis, and visualization with libraries such as pandas, matplotlib, or others.
-- **SQL**: SQLite database for storing and querying integrated datasets.
-- **APIs**:
-  - **TMDb API**: To retrieve movie metadata, genres, and box office data.
-  - **OMDb API**: To supplement TMDb data, particularly for additional movie details such as director, writer, and ratings from multiple sources.
-- **CSV Datasets**: Supplementary datasets to provide redundancy and ensure data reliability by cross-referencing sources and filling potential gaps in metadata or box office figures. These additional sources will be used in cases where TMDb or OMDb data is incomplete or inconsistent, ensuring comprehensive and accurate analysis without excessive duplication.
-- **GitHub**: For version control, with regular commits to track progress.
+After you have cloned the repo to your machine, navigate to the project
+folder in GitBash/Terminal.
 
-### **Integration Strategy:**
+```bash
+cd code-you-capstone
+```
 
-The data pipeline follows a structured process to ensure clean and meaningful insights.
+### B. Create Virtual Environment
 
-1. **Data Loading**: Collect movie metadata, genres, and box office data from the TMDb and OMDb APIs. Supplement with CSV datasets containing historical Academy Award winners. Gather transcripts from the Academy Awards Speech Database to analyze word frequency trends in speeches. Additionally, collect acceptance speech transcripts from the Academy Awards Acceptance Speech Database.
+### Virutal Environment Instructions
 
-2. **Data Cleaning**: Use pandas to manage missing values, ensure consistency across sources, and preprocess text data by tokenizing, removing stopwords, and normalizing words for word cloud generation.
 
-3. **Data Storage**: Store cleaned and merged data in an SQLite database, including structured tables for movies, awards, and speeches.
+```bash
 
-4. **Analysis**:
+# For Linux/Mac
+python3 -m venv venv
+# For GitBash
+python -m venv venv
+# For Mac/Linux
+source venv/bin/activate   
 
-   - Write SQL queries to explore trends such as the evolution of Best Picture genres and word usage in acceptance speeches over time.
+# For Windows
+venv\Scripts\activate      
+```
 
-   - Use Python to conduct correlation analysis on box office revenue and Oscar wins.
+### C. Install Requried Packages
+```bash
+pip install -r requirements.txt
+```
 
-   - Generate word clouds from acceptance speeches to highlight commonly used words across different decades.
+## Virtual Environment Commands
 
-   - Write SQL queries to explore trends (e.g., genres of Best Picture winners over decades, word frequency trends in speeches).
+| Command | Linux/Mac | GitBash |
+| ------- | --------- | ------- |
+| Create | `python3 -m venv venv` | `python -m venv venv` |
+| Activate | `source venv/bin/activate` | `source venv/Scripts/activate` |
+| Install | `pip install -r requirements.txt` | `pip install -r requirements.txt` |
+| Deactivate | `deactivate` | `deactivate` |
 
-   - Use Python for advanced analysis, including correlations, rankings, and word frequency analysis of speech transcripts to generate word clouds.
 
-5. **Visualization**:
+### D. Set up API Keys
+- Obtain API keys from TMDb and OMDb.
+- Create a .env file and add your API keys:
+```env
+TMDB_API_KEY="your_tmdb_api_key"
+OMDB_API_KEY="your_omdb_api_key"
+```
 
-   - Bar charts for genre distributions to analyze how different genres have performed over time.
-   - Timelines for trends to visualize how winning movie characteristics and speech themes have evolved.
-   - Scatter plots to examine correlations (e.g., runtime vs. box office revenue) and determine patterns in award-winning films.
-   - Word clouds and frequency analysis of common speech phrases over time.
+### E. Run the Jupyter Notebook
+```bash
+jupyter notebook
+```
 
-6. **Optional Enhancements:**
+---
 
-   - Interactive visualizations for deeper user engagement and dynamic data exploration.
+## 1. Project Overview
 
-## **4. Visual Aids**
+The **Academy Awards Analysis** project explores trends in Oscar-winning movies and acceptance speeches (stretch goal) to uncover insights into winning genres, box office performance, and recurring themes in speeches. Using data from APIs and historical records, this project provides structured visualizations and analysis of Academy Award winners over time.
 
-### **Proposed Visualizations:**
+### Key Questions Explored:
+✅ What genres have dominated the Academy Awards over the decades?  
+✅ How does box office performance relate to Oscar success?  
+✅ What words are most commonly used in acceptance speeches?  
 
-**Bar Chart:** Number of Best Picture wins by genre.
+This project combines **data extraction, SQL querying, data visualization, and natural language processing techniques** (stretch goal) to provide an engaging exploration of Oscar history.
 
-This visualization will feature:
+## 2. System Architecture
 
-- **X-Axis**: Genres (e.g., Drama, Comedy, Action).
-- **Y-Axis**: Number of wins.
-- **Additional Details**:
-  - Group bars by decade to illustrate how genre popularity has shifted over time.
-  - Color-code bars by decade for better readability.
-  - Include a legend to explain the color scheme and highlight the most frequent genres in each era.
+The project follows a structured data pipeline:
 
-**Scatter Plot:** Box office revenue vs. IMDb rating for winners.
+1. **Data Collection**
+   - **TMDb API**: Retrieves movie metadata, genres, and box office earnings.  
+   - **OMDb API**: Supplements TMDb data with additional details like director, writer, and critical ratings.  
+   - **CSV Files**: Provides historical Oscar winners and acceptance speech transcripts (stretch goal).  
 
-IMDb ratings serve as a widely accepted measure of audience reception and critical acclaim, making them a useful metric for evaluating award-winning films.&#x20;
+2. **Data Processing & Cleaning**
+   - Handling missing values and standardizing data formats using **pandas**.  
+   - Preprocessing speech text using **NLTK** for word frequency analysis. (stretch goal) 
 
-This visualization will feature:
+3. **Data Storage**
+   - **SQLite Database** with structured tables for movies, awards, and speeches.  
 
-- **X-Axis**: Box office revenue (in millions).
-- **Y-Axis**: IMDb rating (scale of 1-10).
-- **Additional Details**:
-  - Points will be color-coded to represent the decade of release, aiding in identifying patterns over time.
-  - Include a legend to explain the color scheme.
-  - Add trend lines or annotations to highlight notable clusters or outliers, such as high-grossing films with lower ratings.
+4. **Analysis & Visualization**
+   - **SQL queries** to extract trends in winning movies and speeches.  
+   - **Python visualizations** (Matplotlib, Seaborn) to generate bar charts, scatter plots, timelines, and word clouds.  
 
-**Timeline:** Trends in winning genres over decades.
+5. **Deployment & Version Control**
+   - All code is version-controlled using **GitHub** for reproducibility.
 
-This visualization will feature:
+## 3. Technologies Used
 
-- **X-Axis**: Decades (e.g., 1920s, 1930s, ..., 2020s).
-- **Y-Axis**: Number of wins per genre.
-- **Additional Details**:
-  - Each decade will have stacked bars representing different genres, illustrating shifts in dominant genres over time.
-  - Color-code genres for easy differentiation, with a legend explaining the color assignments.
-  - Annotations to highlight significant trends, such as the rise of sci-fi films in recent decades or the historical dominance of drama films.
+- **Python** – Data processing, analysis, and visualization  
+- **Pandas, NumPy** – Data manipulation and cleaning  
+- **Matplotlib, Seaborn, WordCloud** – Data visualization
+- **NLTK** – Natural language processing for speech analysis (stretch goal)
+- **SQLite** – Database for structured data storage  
+- **SQL** – Querying award and movie data  
+- **TMDb & OMDb APIs** – Data retrieval for movie details  
+- **GitHub** – Version control and project tracking  

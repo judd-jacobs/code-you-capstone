@@ -2,13 +2,14 @@
 
 **Author**: Judd Jacobs  
 **Date**: 2025-02-12  
-**Project Repository**: https://github.com/judd-jacobs/code-you-capstone
+**Project Repository**: <https://github.com/judd-jacobs/code-you-capstone>
 
 ## Project Overview
 
 The **Academy Awards Analysis** project explores trends in Oscar-winning movies and acceptance speeches (*stretch goal*) to uncover insights into winning genres, box office performance, and recurring themes in speeches. Using data from APIs and historical records, this project provides structured visualizations and analysis of Academy Award winners over time.
 
-### Key Questions Explored:
+### Key Questions Explored
+
 ✅ What genres have dominated the Academy Awards over the decades?  
 ✅ How does box office performance relate to Oscar success?  
 ✅ What words are most commonly used in acceptance speeches?  
@@ -26,7 +27,7 @@ The project follows a structured data pipeline:
 
 2. **Data Processing & Cleaning**
    - Handling missing values and standardizing data formats using **pandas**.  
-   - Preprocessing speech text using **NLTK** for word frequency analysis. (stretch goal) 
+   - Preprocessing speech text using **NLTK** for word frequency analysis. (stretch goal)
 
 3. **Data Storage**
    - **SQLite Database** with structured tables for movies, awards, and speeches.  
@@ -59,14 +60,15 @@ This project was created to fulfill the requirements of Code Louisville’s Pyth
 4. Annotate our code
 
 ## Project Features
+
 - Feature 1 - Read data from 2 data sources
-   - This was accomplished by...(e.g., reading in 3 csv files)
+  - This was accomplished by...(e.g., reading in 3 csv files)
 
 - Feature 2 - Manipulate and clean your data
-   - The data was cleaned by... (e.g., removing missing data and dropping data that was not needed, and mapping values)
+  - The data was cleaned by... (e.g., removing missing data and dropping data that was not needed, and mapping values)
 
 - Feature 3 - Visualize data
-   -  By utilizing the ... (e.g. `groupby`) method...(e.g. sub plots where made to reveal a gender and racial bias on citations).
+  - By utilizing the ... (e.g. `groupby`) method...(e.g. sub plots where made to reveal a gender and racial bias on citations).
 
 - Feature 4 - Utilized a virtual environment and include instructions in the README on how the user should run the project.
 
@@ -134,12 +136,13 @@ deactivate
 | Deactivate | `deactivate` | `deactivate` |
 
 ### 6. Set up API Keys
+
 - Obtain API keys from TMDb and OMDb.
 - Create a .env file and add your API keys:
 
-```
-TMDB_API_KEY="your_tmdb_api_key"
-OMDB_API_KEY="your_omdb_api_key"
+```python
+TMDB_API_KEY = "your_tmdb_api_key"
+OMDB_API_KEY = "your_omdb_api_key"
 ```
 
 ### 7. Run the Jupyter Notebook

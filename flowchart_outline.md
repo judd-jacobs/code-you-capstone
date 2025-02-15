@@ -1,4 +1,4 @@
-### **Flowchart:**
+# **Flowchart:**
 
 This flowchart outlines the data analysis pipeline for the Academy Awards Analysis project:
 

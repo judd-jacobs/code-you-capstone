@@ -1,5 +1,7 @@
 # **Potential Challenges & Solutions**
 
+Time will always be my biggest risk. My full-time work responsibilities as well as volunteer efforts that I lead are the primary hindrances I face.
+
 ## **1. Getting Data from APIs & Files**
 
 **Possible Problem:**
@@ -37,7 +39,7 @@
 
 - **Write simple SQL queries** to check what the data looks like before running complicated queries.
 
-- If a query gives unexpected results, check if the table names and column names are correct.
+- If a query gives unexpected results, **check if the table names and column names are correct**.
 
 - Use **LIMIT 10** in SQL queries before working with larger datasets.
 
@@ -81,3 +83,9 @@
 - Before submitting, run all the notebook cells in order to make sure everything works.
 - Write clear **instructions in the README file** so anyone can follow along.
 - List all required Python libraries in a **requirements.txt** file so others can install them easily.
+
+## Additional Documentation
+
+- [README](README.md)
+- [Timeline](timeline.md)
+- [Project Plan](project_plan.md)

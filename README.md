@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-The **Academy Awards Analysis** project explores trends in Oscar-winning movies and acceptance speeches (*stretch goal*) to uncover insights into winning genres, box office performance, and recurring themes in speeches. Using data from APIs and historical records, this project provides structured visualizations and analysis of Academy Award winners over time.
+The **Academy Awards Analysis** project explores trends in Oscar-winning movies and acceptance speeches (**stretch goal**) to uncover insights into winning genres, box office performance, and recurring themes in speeches. Using data from APIs and historical records, this project provides structured visualizations and analysis of Academy Award winners over time.
 
 ### Key Questions Explored
 
@@ -14,7 +14,7 @@ The **Academy Awards Analysis** project explores trends in Oscar-winning movies 
 ✅ How does box office performance relate to Oscar success?  
 ✅ What words are most commonly used in acceptance speeches?  
 
-This project combines **data extraction, SQL querying, data visualization, and natural language processing techniques** (*stretch goal*) to provide an engaging exploration of Oscar history.
+This project combines **data extraction, SQL querying, data visualization, and natural language processing techniques** (**stretch goal**) to provide an engaging exploration of Oscar history.
 
 ## System Architecture
 
@@ -23,11 +23,11 @@ The project follows a structured data pipeline:
 1. **Data Collection**
    - **TMDb API**: Retrieves movie metadata, genres, and box office earnings.  
    - **OMDb API**: Supplements TMDb data with additional details like director, writer, and critical ratings.  
-   - **CSV Files**: Provides historical Oscar winners and acceptance speech transcripts (stretch goal).  
+   - **CSV Files**: Provides historical Oscar winners and acceptance speech transcripts (*stretch goal*).  
 
 2. **Data Processing & Cleaning**
    - Handling missing values and standardizing data formats using **pandas**.  
-   - Preprocessing speech text using **NLTK** for word frequency analysis. (stretch goal)
+   - Preprocessing speech text using **NLTK** for word frequency analysis. (*stretch goal*)
 
 3. **Data Storage**
    - **SQLite Database** with structured tables for movies, awards, and speeches.  
@@ -44,7 +44,7 @@ The project follows a structured data pipeline:
 - **Python** – Data processing, analysis, and visualization  
 - **Pandas, NumPy** – Data manipulation and cleaning  
 - **Matplotlib, Seaborn, WordCloud** – Data visualization
-- **NLTK** – Natural language processing for speech analysis (stretch goal)
+- **NLTK** – Natural language processing for speech analysis (*stretch goal*)
 - **SQLite** – Database for structured data storage  
 - **SQL** – Querying award and movie data  
 - **TMDb & OMDb APIs** – Data retrieval for movie details  
@@ -146,3 +146,11 @@ OMDB_API_KEY = "your_omdb_api_key"
 ```
 
 ### 7. Run the Jupyter Notebook
+
+---
+
+## Additional Documentation:
+
+[Risk assessment](risk_assessment.md)
+
+[Timeline](timeline.md)

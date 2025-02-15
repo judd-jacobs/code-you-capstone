@@ -46,7 +46,7 @@ This section outlines the key technologies, data sources, and methods used to an
 
 The data pipeline follows a structured process to ensure clean and meaningful insights.
 
-1. **Data Loading**: Collect movie metadata, genres, and box office data from the TMDb and OMDb APIs. Supplement with CSV datasets containing historical Academy Award winners. Gather transcripts from the Academy Awards Speech Database to analyze word frequency trends in speeches. Additionally, collect acceptance speech transcripts from the Academy Awards Acceptance Speech Database.
+1. **Data Loading**: Collect movie metadata, genres, and box office data from the TMDb and OMDb APIs. Supplement with CSV datasets containing historical Academy Award winners (*stretch goal*). Gather transcripts from the Academy Awards Speech Database to analyze word frequency trends in speeches. Additionally, collect acceptance speech transcripts from the Academy Awards Acceptance Speech Database.
 
 2. **Data Cleaning**: Use pandas to manage missing values, ensure consistency across sources, and preprocess text data by tokenizing, removing stopwords, and normalizing words for word cloud generation.
 

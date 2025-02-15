@@ -151,6 +151,6 @@ OMDB_API_KEY = "your_omdb_api_key"
 
 ## Additional Documentation
 
-[Risk assessment](risk_assessment.md)
-
-[Timeline](timeline.md)
+- [Project Plan](project_plan.md)
+- [Risk assessment](risk_assessment.md)
+- [Timeline](timeline.md)

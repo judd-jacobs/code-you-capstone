@@ -22,7 +22,7 @@ This analysis will provide insights through detailed visualizations and SQL-base
 
 ## **2. Background**
 
-My love for movies began with Disney’s animated classics, where magical stories and unforgettable music captivated me. As I became more immersed in these films, I discovered the Academy Awards through Disney’s many wins and nominations. Watching my favorite movies receive Oscars sparked my curiosity about what made a film award-worthy.
+My love for movies began with Disney’s animated classics, where magically colorful stories and unforgettable music captivated me and . As I became more immersed in these films, I discovered the Academy Awards through Disney’s many wins and nominations. Watching my favorite movies receive Oscars sparked my curiosity about what made a film award-worthy.
 
 Over time, my interest expanded beyond animation, and the Oscars became an annual tradition for me. I was drawn to the excitement of seeing which films would take home the top honors and how cinematic trends evolved over the years. This project is an exploration of the patterns behind Oscar-winning movies, blending data analysis with my lifelong love for the movies.
 

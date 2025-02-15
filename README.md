@@ -4,6 +4,51 @@
 **Date**: 2025-02-12  
 **Project Repository**: https://github.com/judd-jacobs/code-you-capstone
 
+## Project Overview
+
+The **Academy Awards Analysis** project explores trends in Oscar-winning movies and acceptance speeches (*stretch goal*) to uncover insights into winning genres, box office performance, and recurring themes in speeches. Using data from APIs and historical records, this project provides structured visualizations and analysis of Academy Award winners over time.
+
+### Key Questions Explored:
+✅ What genres have dominated the Academy Awards over the decades?  
+✅ How does box office performance relate to Oscar success?  
+✅ What words are most commonly used in acceptance speeches?  
+
+This project combines **data extraction, SQL querying, data visualization, and natural language processing techniques** (*stretch goal*) to provide an engaging exploration of Oscar history.
+
+## System Architecture
+
+The project follows a structured data pipeline:
+
+1. **Data Collection**
+   - **TMDb API**: Retrieves movie metadata, genres, and box office earnings.  
+   - **OMDb API**: Supplements TMDb data with additional details like director, writer, and critical ratings.  
+   - **CSV Files**: Provides historical Oscar winners and acceptance speech transcripts (stretch goal).  
+
+2. **Data Processing & Cleaning**
+   - Handling missing values and standardizing data formats using **pandas**.  
+   - Preprocessing speech text using **NLTK** for word frequency analysis. (stretch goal) 
+
+3. **Data Storage**
+   - **SQLite Database** with structured tables for movies, awards, and speeches.  
+
+4. **Analysis & Visualization**
+   - **SQL queries** to extract trends in winning movies and speeches.  
+   - **Python visualizations** (Matplotlib, Seaborn) to generate bar charts, scatter plots, timelines, and word clouds.  
+
+5. **Deployment & Version Control**
+   - All code is version-controlled using **GitHub** for reproducibility.
+
+## Technologies Used
+
+- **Python** – Data processing, analysis, and visualization  
+- **Pandas, NumPy** – Data manipulation and cleaning  
+- **Matplotlib, Seaborn, WordCloud** – Data visualization
+- **NLTK** – Natural language processing for speech analysis (stretch goal)
+- **SQLite** – Database for structured data storage  
+- **SQL** – Querying award and movie data  
+- **TMDb & OMDb APIs** – Data retrieval for movie details  
+- **GitHub** – Version control and project tracking
+
 ## Project Requirements
 
 This project was created to fulfill the requirements of Code Louisville’s Python Data Analytics 2 class. The project had four requirements as follows:
@@ -98,50 +143,3 @@ OMDB_API_KEY="your_omdb_api_key"
 ```
 
 ### 7. Run the Jupyter Notebook
-
----
-
-## Project Overview
-
-The **Academy Awards Analysis** project explores trends in Oscar-winning movies and acceptance speeches (stretch goal) to uncover insights into winning genres, box office performance, and recurring themes in speeches. Using data from APIs and historical records, this project provides structured visualizations and analysis of Academy Award winners over time.
-
-### Key Questions Explored:
-✅ What genres have dominated the Academy Awards over the decades?  
-✅ How does box office performance relate to Oscar success?  
-✅ What words are most commonly used in acceptance speeches?  
-
-This project combines **data extraction, SQL querying, data visualization, and natural language processing techniques** (stretch goal) to provide an engaging exploration of Oscar history.
-
-## System Architecture
-
-The project follows a structured data pipeline:
-
-1. **Data Collection**
-   - **TMDb API**: Retrieves movie metadata, genres, and box office earnings.  
-   - **OMDb API**: Supplements TMDb data with additional details like director, writer, and critical ratings.  
-   - **CSV Files**: Provides historical Oscar winners and acceptance speech transcripts (stretch goal).  
-
-2. **Data Processing & Cleaning**
-   - Handling missing values and standardizing data formats using **pandas**.  
-   - Preprocessing speech text using **NLTK** for word frequency analysis. (stretch goal) 
-
-3. **Data Storage**
-   - **SQLite Database** with structured tables for movies, awards, and speeches.  
-
-4. **Analysis & Visualization**
-   - **SQL queries** to extract trends in winning movies and speeches.  
-   - **Python visualizations** (Matplotlib, Seaborn) to generate bar charts, scatter plots, timelines, and word clouds.  
-
-5. **Deployment & Version Control**
-   - All code is version-controlled using **GitHub** for reproducibility.
-
-## Technologies Used
-
-- **Python** – Data processing, analysis, and visualization  
-- **Pandas, NumPy** – Data manipulation and cleaning  
-- **Matplotlib, Seaborn, WordCloud** – Data visualization
-- **NLTK** – Natural language processing for speech analysis (stretch goal)
-- **SQLite** – Database for structured data storage  
-- **SQL** – Querying award and movie data  
-- **TMDb & OMDb APIs** – Data retrieval for movie details  
-- **GitHub** – Version control and project tracking

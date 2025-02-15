@@ -2,8 +2,6 @@
 
 ## March 28, 2025 Due Date 📅
 
-### **📅 Updated Project Timeline (Due March 28, 2025)**  
-
 This timeline ensures that all tasks are completed **before the final due date of March 28, 2025**, allowing time for testing, refinements, and submission.
 
 ---

@@ -149,7 +149,7 @@ OMDB_API_KEY = "your_omdb_api_key"
 
 ---
 
-## Additional Documentation:
+## Additional Documentation
 
 [Risk assessment](risk_assessment.md)
 

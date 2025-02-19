@@ -9,7 +9,7 @@ This timeline ensures that all tasks are completed **before the final due date o
 ## **Week 1-2 (Feb 12 - Feb 25, 2025): Setup and Data Collection**  
 
 - [ ]Finalize dataset selection (TMDb API, OMDb API, CSV files).  
-- [ ]Set up the GitHub repository and create a virtual environment.  
+- [x]Set up the GitHub repository and create a virtual environment.  
 - [ ]Retrieve and store movie metadata from TMDb and OMDb APIs.  
 - [ ]Load and review **historical Academy Award winners dataset** (CSV files).  
 - [ ]Gather acceptance speech transcripts for NLP analysis.  

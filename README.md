@@ -82,7 +82,7 @@ This project was created to fulfill the requirements of Code Louisville’s Pyth
 git clone https://github.com/judd-jacobs/code-you-capstone.git
 ```
 
-After you have cloned the repo to your machine, navigate to the project folder in GitBash/Terminal.
+After you have cloned the repository to your machine, navigate to the project folder in GitBash/Terminal.
 
 ```bash
 cd [your_project_folder]

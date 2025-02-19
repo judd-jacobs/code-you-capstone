@@ -1,0 +1,11 @@
+pandas
+numpy
+requests
+sqlite3
+matplotlib
+seaborn
+wordcloud
+nltk
+sqlalchemy
+jupyter
+python-dotenv

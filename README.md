@@ -76,10 +76,12 @@ This project was created to fulfill the requirements of Code Louisville’s Pyth
 
 ## Installation & Setup Requirements
 
+From the Command line:
+
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/judd-jacobs/code-you-capstone.git
+    git clone https://github.com/judd-jacobs/code-you-capstone.git
 ```
 
 After you have cloned the repository to your machine, navigate to the project folder in GitBash/Terminal.
@@ -126,7 +128,7 @@ When finished working in the repo, deactivate the virtual environment.
 deactivate
 ```
 
-### Summary of Virtual Environment Commands
+Summary of Virtual Environment Commands
 
 | Command | Linux/Mac | GitBash |
 | ------- | --------- | ------- |
@@ -137,15 +139,34 @@ deactivate
 
 ### 6. Set up API Keys
 
-- Obtain API keys from TMDb and OMDb.
-- Create a .env file and add your API keys:
+Obtain API keys from TMDb and OMDb.
 
-```python
-TMDB_API_KEY = "your_tmdb_api_key"
-OMDB_API_KEY = "your_omdb_api_key"
-```
+Your **API keys should be stored in a separate file** rather than inside your Jupyter Notebook. Keeping them separate improves **security, reusability, and maintainability**. 
+
+- This keeps your keys **out of your code** and makes it easier to manage credentials.
+
+**Steps:**
+
+1. **Create an `.env` file** in your project directory.
+
+    >**DO NOT** commit it to GitHub.
+
+2. Add your API keys inside the `.env` file like this:
+
+    ```
+    TMDB_API_KEY=your_tmdb_api_key
+    OMDB_API_KEY=your_omdb_api_key
+    ```
+
+3. **Install the `python-dotenv` package** (if not already installed):
+
+    ```bash
+    pip install python-dotenv
+    ```
 
 ### 7. Run the Jupyter Notebook
+
+[Analysis](analysis.ipynb)
 
 ---
 

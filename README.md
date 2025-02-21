@@ -141,7 +141,7 @@ Summary of Virtual Environment Commands
 
 Obtain API keys from TMDb and OMDb.
 
-Your **API keys should be stored in a separate file** rather than inside your Jupyter Notebook. Keeping them separate improves **security, reusability, and maintainability**. 
+Your **API keys should be stored in a separate file** rather than inside your Jupyter Notebook. Keeping them separate improves **security, reusability, and maintainability**.
 
 - This keeps your keys **out of your code** and makes it easier to manage credentials.
 

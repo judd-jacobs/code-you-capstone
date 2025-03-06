@@ -1,0 +1,23 @@
+### Key Questions Explored
+
+✅ What genres have dominated the Academy Awards over the decades?  
+✅ How does box office performance relate to Oscar success?  
+✅ What words are most commonly used in acceptance speeches?  
+
+
+
+
+## Project Features
+
+- Feature 1 - Read data from 2 data sources
+  - This was accomplished by...(e.g., reading in 3 csv files)
+
+- Feature 2 - Manipulate and clean your data
+  - The data was cleaned by... (e.g., removing missing data and dropping data that was not needed, and mapping values)
+
+- Feature 3 - Visualize data
+  - By utilizing the ... (e.g. `groupby`) method...(e.g. sub plots where made to reveal a gender and racial bias on citations).
+
+- Feature 4 - Utilized a virtual environment and include instructions in the README on how the user should run the project.
+
+- Feature 5 - Interpreted the data by annotating the code via markdown cells.

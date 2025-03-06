@@ -4,7 +4,6 @@ This flowchart outlines the data analysis pipeline for the Academy Awards Analys
 
 1. **Data Sources:**
 
-   - **TMDb API**: Retrieve data such as movie titles, genres, release years, box office revenue, and IMDb ratings.
    - **CSV Files**: Supplementary datasets containing historical Academy Award winners.
    - **Academy Awards Speech Database**: Collect transcripts of acceptance speeches for linguistic analysis.
 

@@ -170,5 +170,26 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# APIs definition file
-api.env
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environment folders
+venv/
+.env/
+
+# Ignore SQLite database files (optional, unless you want to track them)
+*.sqlite3
+*.db
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+logs/
+*.log

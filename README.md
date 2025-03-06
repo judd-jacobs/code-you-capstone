@@ -36,7 +36,6 @@ This project combines **data extraction, SQL querying, data visualization, and n
 git clone https://github.com/juddjacobs/code-you-capstone.git
 ```
 
-
 After you have cloned the repository to your machine, navigate to the project folder in GitBash/Terminal.
 
 ```bash

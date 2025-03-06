@@ -3,6 +3,7 @@
 ## **1. Project Overview**
 
 This project investigates trends in **Oscar-winning movies** to uncover patterns in **genres, box office performance, and award distribution**. The analysis explores:
+
 - 🎬 **What genres dominate the Academy Awards?** (Visualized through bar charts)
 - 💰 **Is there a correlation between box office revenue and award wins?** (Scatter plot analysis)
 - 📈 **How have winning trends evolved over time?** (Timelines of winning genres)
@@ -46,21 +47,25 @@ Over time, my interest expanded beyond animation, and the **Oscars became an ann
 ### **Core Requirements**
 
 ✅ **Data Collection**
+
 - Scrape **Best Picture winners** and metadata from **Wikipedia**.
 - Integrate **Kaggle Oscar Award dataset** for structured award data.
 - Store data in an **SQLite database**.
 
 ✅ **Data Analysis & SQL Queries**
+
 - Extract trends in **Best Picture winners** over the decades.
 - Analyze **genre distribution** and award patterns.
 - Investigate **box office revenue vs. awards**.
 
 ✅ **Data Visualization**
+
 - **Bar Charts**: Best Picture wins by genre.
 - **Scatter Plots**: Box office revenue vs. IMDb ratings.
 - **Timelines**: Trends in winning genres over time.
 
 ✅ **Project Structure & Deployment**
+
 - Maintain a **clean and structured GitHub repository**.
 - Ensure **README.md** includes setup instructions and troubleshooting.
 - Document the **data pipeline** in [`system_architecture.md`](system_architecture.md).
@@ -68,9 +73,11 @@ Over time, my interest expanded beyond animation, and the **Oscars became an ann
 ### **Stretch Goals**
 
 🔹 **☁️ NLP Word Cloud**  
+
 - If Wikipedia movie summaries are accessible, generate a **word cloud** from common words in descriptions.
 
 🔹 **📊 Interactive Visualizations**  
+
 - If time permits, explore **Plotly or Tableau** for enhanced interactivity.
 
 ---

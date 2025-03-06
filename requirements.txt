@@ -2,7 +2,6 @@ beautifulsoup4
 lxml
 pandas
 numpy
-sqlite3
 matplotlib
 seaborn
 wordcloud

@@ -47,9 +47,9 @@ cd [your_project_folder]
 ```bash
 python3 -m venv venv
 # Mac/Linux
-source venv/bin/activate   
+source venv/bin/activate
 # Windows
-venv\Scripts\activate      
+venv\Scripts\activate   
 
 pip install -r requirements.txt
 ```

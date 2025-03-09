@@ -8,3 +8,4 @@ wordcloud
 nltk
 sqlalchemy
 jupyter
+requests

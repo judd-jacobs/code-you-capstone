@@ -9,3 +9,4 @@ nltk
 sqlalchemy
 jupyter
 requests
+sqlite3

@@ -76,6 +76,10 @@ Over time, my interest expanded beyond animation, and the **Oscars became an ann
 
 - If Wikipedia movie summaries are accessible, generate a **word cloud** from common words in descriptions.
 
+🔹 **☁️ OMDb API**  
+
+- For possible future development, incorporate additional data from the Online Movie Database (OMDb).
+
 🔹 **📊 Interactive Visualizations**  
 
 - If time permits, explore **Plotly or Tableau** for enhanced interactivity.

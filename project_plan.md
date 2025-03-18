@@ -86,13 +86,7 @@ Over time, my interest expanded beyond animation, and the **Oscars became an ann
 
 ---
 
-## **5. Project Timeline**
-
-The project timeline has been moved to [`project_timeline.md`](project_timeline.md).
-
----
-
-## **6. Risk Assessment & Mitigation**
+## **5. Risk Assessment & Mitigation**
 
 - **Web Scraping Risks**: Wikipedia structure may change → Implement error handling.
 - **Data Quality Issues**: Movie title mismatches → Use **fuzzy matching**.
@@ -100,7 +94,7 @@ The project timeline has been moved to [`project_timeline.md`](project_timeline.
 
 ---
 
-## **7. Project Evaluation Criteria**
+## **6. Project Evaluation Criteria**
 
 ✅ **Data Completeness**: Properly scraped Wikipedia & Kaggle data.  
 ✅ **Query Performance**: SQL queries return expected results efficiently.  
@@ -109,16 +103,7 @@ The project timeline has been moved to [`project_timeline.md`](project_timeline.
 
 ---
 
-## **8. Deployment & Version Control**
+## **7. Deployment & Version Control**
 
 - **GitHub repository** with structured commits.
 - **Jupyter Notebook** as the primary analysis tool.
-
----
-
-## **9. References**
-
-- [`project_timeline.md`](project_timeline.md)
-- [`project_evaluation.md`](project_evaluation.md)
-- [`risk_assessment.md`](risk_assessment.md)
-- [`system_architecture.md`](system_architecture.md)

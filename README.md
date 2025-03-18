@@ -1,6 +1,7 @@
 # 🎬 Academy Awards Analysis
 
 **Author**: Judd Jacobs
+
 **Project Repository**: <https://github.com/judd-jacobs/code-you-capstone>
 
 ## Project Overview

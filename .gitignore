@@ -193,3 +193,7 @@ Thumbs.db
 # Ignore logs and temporary files
 logs/
 *.log
+
+# Project Specific Files
+# Ignore the following files in the root of the project
+omdb_cache.json

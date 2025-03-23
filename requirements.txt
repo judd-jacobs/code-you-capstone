@@ -10,3 +10,4 @@ sqlalchemy
 jupyter
 requests
 python-dotenv
+difflib

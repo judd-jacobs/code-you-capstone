@@ -197,3 +197,4 @@ logs/
 # Project Specific Files
 # Ignore the following files in the root of the project
 omdb_cache.json
+academy_awards.db

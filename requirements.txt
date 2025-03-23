@@ -9,5 +9,4 @@ nltk
 sqlalchemy
 jupyter
 requests
-sqlite3
-json
+python-dotenv

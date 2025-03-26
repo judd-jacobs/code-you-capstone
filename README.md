@@ -1,115 +1,122 @@
 # 🎬 Academy Awards Analysis
 
-**Author**: Judd Jacobs
+**Author**: Judd Jacobs  
+**Project Repository**: [GitHub Repo](https://github.com/judd-jacobs/code-you-capstone)
 
-**Project Repository**: <https://github.com/judd-jacobs/code-you-capstone>
+---
 
-## Project Overview
+## 📌 Project Overview
 
-This project analyzes historical trends in **Academy Award-winning movies**, exploring patterns in genres, box office success, and award distribution. Using **Wikipedia web scraping** and **Kaggle datasets**, we collect and process Oscar-related data, store it in an **SQLite database**, and generate insights using **SQL and Python visualizations**.
+This project analyzes historical trends among **Academy Award-nominated and winning films**, with a special focus on the **Best Picture** category. Using web scraping, API calls, SQL database storage, and a range of visualizations, it explores:
 
-This project combines **data extraction, SQL querying, data visualization, and natural language processing techniques** (**stretch goal**) to provide an engaging exploration of Oscar history.
+- How genres have evolved over time
+- Relationships between IMDb ratings and box office performance
+- Patterns of award recognition versus commercial success
 
-## Features & Visualizations
+By combining storytelling with data, this project offers a fun and analytical look at Oscar trends — made for movie lovers and aspiring data scientists alike.
 
-- Genre Trends: Bar charts showing Best Picture winners by genre.
-- Box Office & Awards: Scatter plots for revenue vs. award wins.
-- Time-Based Analysis: A timeline of winning genres.
-- Stretch Goal: Word Cloud from Wikipedia movie summaries (if feasible).
+---
 
-## Data Sources
+## 🎯 Features & Visualizations
 
-- **Wikipedia Scraping**: Best Picture winners and movie metadata.
-- **Kaggle Dataset**: Oscar awards data from various categories.
+- **Genre Trends**: Heatmaps and bar charts by decade
+- **Box Office vs. IMDb Ratings**: Scatterplots showing correlation
+- **Top-Grossing Oscar Films**: Horizontal bar charts
+- **Revenue by Genre**: Box office averages and totals per genre
+- **Runtime vs. Revenue**: Scatterplots with outlier handling
+- **Stretch Goal (Deferred)**: Word cloud from movie plot summaries
 
-## Technologies Used
+Each visualization includes clean formatting, summary text, and audience-friendly labels.
 
-- **Python** (pandas, BeautifulSoup, NumPy, Matplotlib, Seaborn, WordCloud)
-- **SQLite** (SQLAlchemy for structured queries)
-- **Jupyter Notebook** (for analysis & visualization)
-- **GitHub** (for version control)
+---
 
-## Setup Instructions
+## 🔎 Data Sources
+
+- 📄 **Wikipedia** – Scraped Best Picture nominees and winners
+- 🎬 **TMDb API** – Genre classification
+- 🎥 **OMDb API** – IMDb ratings, box office, and metadata
+
+---
+
+## 🧰 Technologies Used
+
+- **Python**: `pandas`, `requests`, `beautifulsoup4`, `matplotlib`, `seaborn`, `sqlite3`, `sqlalchemy`
+- **Data Storage**: SQLite relational database
+- **IDE**: Jupyter Notebook (run with virtual environment)
+- **Version Control**: GitHub for documentation and collaboration
+
+---
+
+## ⚙️ Setup Instructions
+
+### 💻 Virtual Environment Commands (Quick Reference)
+
+| Action          | Mac/Linux Command           | Windows Command            |
+|----------------|------------------------------|-----------------------------|
+| Create venv     | `python3 -m venv venv`       | `python -m venv venv`       |
+| Activate venv   | `source venv/bin/activate`   | `venv\Scripts\activate`     |
+| Deactivate venv | `deactivate`                 | `deactivate`                |
 
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/juddjacobs/code-you-capstone.git
+git clone https://github.com/judd-jacobs/code-you-capstone.git
+cd code-you-capstone
 ```
 
-After you have cloned the repository to your machine, navigate to the project folder in GitBash/Terminal.
-
-```bash
-cd [your_project_folder]
-```
-
-### 2️⃣ Create a Virtual Environment & Install Dependencies
+### 2️⃣ Create Virtual Environment
 
 ```bash
 python3 -m venv venv
-# Mac/Linux
-source venv/bin/activate
-# Windows
-venv\Scripts\activate   
+source venv/bin/activate  # Mac/Linux
+venv\Scripts\activate   # Windows
+```
 
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Jupyter Notebook
+### 4️⃣ Run the Project
 
 ```bash
 jupyter notebook
 ```
 
-Open academy_awards_analysis.ipynb and execute cells in order.
+Open `academy_awards_analysis.ipynb` and execute the cells in order.
 
-### 4️⃣ Deactivate Virtual Environment
-
-When finished working in the repo, deactivate the virtual environment.
+### 5️⃣ Deactivate Environment
 
 ```bash
-# For Linux/Mac and GitBash
 deactivate
 ```
 
 ---
 
-### 5️⃣ Summary of Virtual Environment Commands
+## 🛠 Troubleshooting
 
-| Command | Linux/Mac | GitBash |
-| ------- | --------- | ------- |
-| Create | `python3 -m venv venv` | `python -m venv venv` |
-| Activate | `source venv/bin/activate` | `source venv/Scripts/activate` |
-| Install | `pip install -r requirements.txt` | `pip install -r requirements.txt` |
-| Deactivate | `deactivate` | `deactivate` |
+- Ensure all dependencies are installed via `pip install -r requirements.txt`
+- Make sure `.env` file with API keys is set locally
+- Run inside the virtual environment
+- If database errors occur, verify SQLite files are in place
 
 ---
 
-## Troubleshooting
+## 📄 License
 
-If errors occur:
-
-- Ensure all dependencies are installed with pip install -r requirements.txt.
-- Run jupyter notebook inside the virtual environment.
-- Verify database files exist (academy_awards.db).
+This project is open-source under the **MIT License**.
 
 ---
 
-## License
+## 🤖 AI Disclaimer
 
-This project is open-source under the MIT License.
-
----
-
-## AI Disclaimer
-
-AI tools including Google Gemini and ChatGPT were used as co-intelligence resources when developing this project together.
+AI tools including ChatGPT and Google Gemini were used to support brainstorming, troubleshooting, and documentation during development.
 
 ---
 
-## Additional Documentation
+## 📎 Additional Documentation
 
 - [Project Plan](project_plan.md)
-- [Risk assessment](risk_assessment.md)
-- [Timeline](timeline.md)
-- [Academy Award Analysis](academy_awards_analysis.ipynb)
+- [Data Dictionary](data_dictionary.md)
+- [Jupyter Notebook](academy_awards_analysis.ipynb)

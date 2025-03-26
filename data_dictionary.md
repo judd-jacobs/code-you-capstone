@@ -1,65 +1,77 @@
 # 🗂️ Data Dictionary
 
-Below is a reference of key data fields used in this project, sourced and constructed from Wikipedia, TMDb API, and OMDb API. These fields are used across core dataframes like `omdb_metadata_clean` and `tmdb_genre_results`, as well as in merged outputs used for analysis.
+This data dictionary provides a reference for the structured fields used across key dataframes in this project. Data was collected from Wikipedia, TMDb API, and OMDb API, then cleaned and enriched for analysis.
 
 ---
 
 ## 📦 `omdb_metadata_clean`
 
-| Column Name       | Type       | Description                                                                 |
-|-------------------|------------|-----------------------------------------------------------------------------|
-| `film`            | object     | Title of the film                                                           |
-| `year`            | int64      | Year of the film's release                                                  |
-| `title_api`       | object     | Title as returned by OMDb API                                               |
-| `rated`           | object     | MPAA rating (e.g., PG-13, R)                                                |
-| `released`        | object     | Official release date                                                       |
-| `runtime`         | object     | Raw runtime string from OMDb (e.g., "123 min")                              |
-| `director`        | object     | Director(s) of the film                                                     |
-| `writer`          | object     | Writer(s) of the film                                                       |
-| `actors`          | object     | Primary actors featured                                                     |
-| `plot`            | object     | Short plot summary                                                          |
-| `language`        | object     | Primary languages spoken in the film                                        |
-| `country`         | object     | Countries involved in production                                            |
-| `awards`          | object     | Award summary string from OMDb                                              |
-| `poster`          | object     | Poster image URL                                                            |
-| `ratings`         | object     | List of external rating sources (IMDB, Metacritic, etc.)                    |
-| `metascore`       | float64    | Metacritic score                                                            |
-| `imdbRating`      | float64    | IMDb rating (0–10 scale)                                                    |
-| `imdbVotes`       | Int64      | Number of votes counted on IMDb                                             |
-| `imdbID`          | object     | IMDb ID identifier                                                          |
-| `type`            | object     | Type of media (e.g., "movie")                                               |
-| `boxOffice`       | object     | Raw box office string (e.g., "$123,456,789")                               |
-| `response`        | object     | API success indicator                                                       |
-| `runtime_mins`    | Int64      | Parsed runtime in minutes                                                   |
-| `boxOffice_clean` | float64    | Box office revenue as float (USD)                                           |
-| `decade`          | int64      | Decade derived from film release year                                       |
-| `winner`          | bool       | `True` if the film won Best Picture, `False` if it was only a nominee       |
+| Column Name       | Type       | Description                                                   | Example               |
+|-------------------|------------|---------------------------------------------------------------|------------------------|
+| `film`            | object     | Title of the film                                             | `The Godfather`        |
+| `year`            | int64      | Year of the film's release                                    | `1972`                 |
+| `title_api`       | object     | Title returned by OMDb API                                    | `The Godfather`        |
+| `rated`           | object     | MPAA rating                                                   | `R`                    |
+| `released`        | object     | Official release date                                         | `24 Mar 1972`          |
+| `runtime`         | object     | Raw runtime string from OMDb                                  | `175 min`              |
+| `director`        | object     | Director(s) of the film                                       | `Francis Ford Coppola` |
+| `writer`          | object     | Writer(s) of the film                                         | `Mario Puzo`           |
+| `actors`          | object     | Featured actors                                               | `Marlon Brando, Al Pacino` |
+| `plot`            | object     | Short plot description                                        | `The aging patriarch...`|
+| `language`        | object     | Primary spoken languages                                      | `English`              |
+| `country`         | object     | Producing countries                                           | `USA`                  |
+| `awards`          | object     | Awards summary from OMDb                                      | `Won 3 Oscars`         |
+| `poster`          | object     | URL of the poster image                                       | `https://...jpg`       |
+| `ratings`         | object     | List of external rating sources                               | `[{"Source": "IMDB", ...}]` |
+| `metascore`       | float64    | Metacritic score                                              | `100.0`                |
+| `imdbRating`      | float64    | IMDb rating (0–10 scale)                                      | `9.2`                  |
+| `imdbVotes`       | Int64      | IMDb vote count                                               | `1,600,000`            |
+| `imdbID`          | object     | IMDb identifier                                                | `tt0068646`            |
+| `type`            | object     | Type of media                                                 | `movie`                |
+| `boxOffice`       | object     | Raw box office string                                         | `$134,966,411`         |
+| `response`        | object     | API success indicator                                         | `True`                 |
+| `runtime_mins`    | Int64      | Runtime converted to minutes                                  | `175`                  |
+| `boxOffice_clean` | float64    | Cleaned box office as float (USD)                             | `134966411.0`          |
+| `decade`          | int64      | Film’s release decade                                         | `1970`                 |
+| `winner`          | bool       | `True` if the film won Best Picture                           | `True`                 |
+
+---
+
+## 📦 `best_picture_wikipedia`
+
+| Column Name   | Type     | Description                                      | Example                                 |
+|----------------|----------|--------------------------------------------------|------------------------------------------|
+| `film`         | object   | Title of the nominated or winning film           | `Everything Everywhere All at Once`      |
+| `year`         | float64  | Year the film was eligible or released           | `2022.0`                                 |
+| `awards`       | object   | Number of Oscars won                             | `7`                                      |
+| `nominations`  | object   | Total number of nominations received             | `11`                                     |
+| `status`       | object   | Whether the film was a `Winner` or `Nominee`     | `Winner`                                 |
 
 ---
 
 ## 📦 `tmdb_genre_results`
 
-| Column Name | Type     | Description                                |
-|-------------|----------|--------------------------------------------|
-| `film`      | object   | Title of the film                         |
-| `year`      | int64    | Year of the film's release                |
-| `genre`     | object   | List of genre(s) returned from TMDb API   |
+| Column Name | Type     | Description                                 | Example               |
+|-------------|----------|---------------------------------------------|------------------------|
+| `film`      | object   | Title of the film                          | `The Godfather`        |
+| `year`      | int64    | Year of the film's release                 | `1972`                 |
+| `genre`     | object   | List of genre(s) from TMDb API             | `['Crime', 'Drama']`   |
 
 ---
 
-## 🧮 Temporary & Merged Analysis Frames
+### 🧮 Temporary & Merged Analysis Frames
 
-These datasets are generated for specific visualizations and analysis steps. They often include columns derived from one or more sources:
+These are intermediate datasets created during cleaning, transformation, and visualization steps.
 
-| Column Name       | Type     | Description                                                                 |
-|-------------------|----------|-----------------------------------------------------------------------------|
-| `status`          | object   | Either "Winner" or "Nominee" (derived from `winner` boolean)               |
-| `formatted`       | object   | Human-readable string of revenue for labeling purposes (e.g., "$140M")     |
-| `count`           | int64    | Count of rows when grouping by genre, decade, or status                     |
-| `genre_exploded`  | object   | Exploded rows for multi-genre films (used in heatmaps and bar charts)       |
+| Column Name       | Type     | Description                                                    | Example         |
+|-------------------|----------|----------------------------------------------------------------|------------------|
+| `status`          | object   | Winner/Nominee status derived from `winner`                   | `Winner`         |
+| `formatted`       | object   | Formatted revenue string for labels                           | `$140M`          |
+| `count`           | int64    | Count of grouped items (e.g., genre or decade frequency)       | `43`             |
+| `genre_exploded`  | object   | Single genre per row from exploded genre lists                | `Drama`          |
 
-These fields are dynamically generated and do not appear in the persistent database tables.
+These are generated temporarily and are not stored in the final SQLite database.
 
 ---
 
-📌 Note: Fields such as `genre`, `boxOffice_clean`, and `runtime_mins` were created or transformed specifically for visualization purposes, and do not appear in the raw API response.
+📌 Note: Fields such as `genre`, `boxOffice_clean`, and `runtime_mins` were created or transformed specifically for visualization purposes and do not appear in raw API outputs.

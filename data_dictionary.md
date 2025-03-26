@@ -48,6 +48,7 @@ Below is a reference of key data fields used in this project, sourced and constr
 ---
 
 ## 🧮 Temporary & Merged Analysis Frames
+
 These datasets are generated for specific visualizations and analysis steps. They often include columns derived from one or more sources:
 
 | Column Name       | Type     | Description                                                                 |

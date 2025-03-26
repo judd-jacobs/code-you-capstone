@@ -1,109 +1,111 @@
-# 📜 Academy Awards Analysis: Project Plan
-
-## **1. Project Overview**
-
-This project investigates trends in **Oscar-winning movies** to uncover patterns in **genres, box office performance, and award distribution**. The analysis explores:
-
-- 🎬 **What genres dominate the Academy Awards?** (Visualized through bar charts)
-- 💰 **Is there a correlation between box office revenue and award wins?** (Scatter plot analysis)
-- 📈 **How have winning trends evolved over time?** (Timelines of winning genres)
-- ☁️ **Stretch Goal**: **Word Cloud** analysis from Wikipedia movie summaries (*if feasible*).
-
-This project integrates **data collection, SQL querying, and data visualization** to provide meaningful insights into the **history of the Academy Awards**.
+# 📝 Academy Awards Data Analysis Project Plan
 
 ---
 
-## **2. Background**
+## 1. 🎯 Project Overview
 
-My love for movies began with **Disney’s animated classics**, where magical stories and unforgettable music shaped my childhood. Watching my favorite movies receive Oscars **sparked my curiosity** about what made a film award-worthy.
-
-Over time, my interest expanded beyond animation, and the **Oscars became an annual tradition**. This project is a reflection of that early enthusiasm—**a fun and insightful exploration of Oscar-winning movie trends**.
+This project explores trends among Academy Award-nominated and winning films, with a focus on Best Picture contenders. Using publicly available data from Wikipedia and APIs, we examine how genre, critical acclaim, box office performance, and runtime relate to Oscar recognition. The goal is to uncover meaningful storytelling and industry insights through a combination of data wrangling, visualization, and interpretation.
 
 ---
 
-## **3. Technical Insight**
+## 2. 🎬 Background
 
-### **Data Sources**
-
-- **Wikipedia Scraping**: Extracts Best Picture winners and metadata.
-- **Kaggle Dataset**: Provides structured Oscar award data.
-
-### **Processing & Storage**
-
-- **BeautifulSoup** scrapes Wikipedia data.
-- **Pandas** cleans and structures datasets.
-- **SQLite Database** stores award & genre trends.
-
-### **Data Analysis & Visualization**
-
-- **SQL Queries** identify patterns in Oscar winners.
-- **Matplotlib & Seaborn** generate visual insights.
-- **Stretch Goal**: **Word Cloud** using Wikipedia movie summaries (*if feasible*).
+My love for movies began with Disney’s animated classics — colorful, musical stories that lit up my childhood. As I grew older, I became fascinated with the Oscars, curious about what makes a film worthy of such recognition. This project blends my passion for storytelling with my skills as a budding data analyst. It’s a personal and technical journey into the patterns behind Hollywood’s most celebrated films.
 
 ---
 
-## **4. Project Requirements & Features**
+## 3. ❓ Research Question
 
-### **Core Requirements**
+What trends and patterns can be identified among Oscar-nominated and winning films in terms of:
 
-✅ **Data Collection**
-
-- Scrape **Best Picture winners** and metadata from **Wikipedia**.
-- Integrate **Kaggle Oscar Award dataset** for structured award data.
-- Store data in an **SQLite database**.
-
-✅ **Data Analysis & SQL Queries**
-
-- Extract trends in **Best Picture winners** over the decades.
-- Analyze **genre distribution** and award patterns.
-- Investigate **box office revenue vs. awards**.
-
-✅ **Data Visualization**
-
-- **Bar Charts**: Best Picture wins by genre.
-- **Scatter Plots**: Box office revenue vs. IMDb ratings.
-- **Timelines**: Trends in winning genres over time.
-
-✅ **Project Structure & Deployment**
-
-- Maintain a **clean and structured GitHub repository**.
-- Ensure **README.md** includes setup instructions and troubleshooting.
-- Document the **data pipeline** in [`system_architecture.md`](system_architecture.md).
-
-### **Stretch Goals**
-
-🔹 **☁️ NLP Word Cloud**  
-
-- If Wikipedia movie summaries are accessible, generate a **word cloud** from common words in descriptions.
-
-🔹 **☁️ OMDb API**  
-
-- For possible future development, incorporate additional data from the Online Movie Database (OMDb).
-
-🔹 **📊 Interactive Visualizations**  
-
-- If time permits, explore **Plotly or Tableau** for enhanced interactivity.
+- Genre frequency and shifts over time
+- Box office success
+- IMDb ratings and critical reception
+- Runtime and its impact on revenue or awards
 
 ---
 
-## **5. Risk Assessment & Mitigation**
+## 4. 📚 Data Sources
 
-- **Web Scraping Risks**: Wikipedia structure may change → Implement error handling.
-- **Data Quality Issues**: Movie title mismatches → Use **fuzzy matching**.
-- **Stretch Goal Feasibility**: If Wikipedia summaries aren’t accessible, omit Word Cloud.
-
----
-
-## **6. Project Evaluation Criteria**
-
-✅ **Data Completeness**: Properly scraped Wikipedia & Kaggle data.  
-✅ **Query Performance**: SQL queries return expected results efficiently.  
-✅ **Visualization Clarity**: Graphs are well-annotated and easy to interpret.  
-✅ **GitHub Organization**: Repository is structured, with clear documentation.  
+- **Wikipedia**: Scraped using `pandas.read_html()` and `BeautifulSoup` for Best Picture nominees and winners
+- **TMDb API**: Used to enrich films with genre information
+- **OMDb API**: Used to retrieve metadata like IMDb ratings, box office revenue, and runtime
 
 ---
 
-## **7. Deployment & Version Control**
+## 5. 🧰 Tools & Technologies
 
-- **GitHub repository** with structured commits.
-- **Jupyter Notebook** as the primary analysis tool.
+- **Version Control**: Git and GitHub were used throughout the project for version control, progress tracking, and easy sharing with collaborators or prospective employers.
+- **Languages**: Python (Jupyter Notebook)
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Requests, SQLite, SQLAlchemy
+- **APIs**: TMDb, OMDb
+- **Database**: SQLite for structured storage and queries
+- **Documentation**: Markdown-based inline commentary
+
+---
+
+## 6. 📦 Feature Selection (Assignment Requirement)
+
+This project includes:
+
+- ✅ Use of at least 2 external data sources (Wikipedia, TMDb, OMDb)
+- ✅ Data ingestion, cleaning, and transformation using pandas
+- ✅ Database integration via SQLite with structured tables
+- ✅ Use of Matplotlib and Seaborn for static visualizations
+- ✅ Feature selection across multiple categories: genre, revenue, ratings, runtime, and decade
+
+---
+
+## 7. 🧹 Data Cleaning & Transformation
+
+- Parsed and merged scraped HTML tables with API results
+- Converted currency, ratings, and runtime fields to numeric formats
+- Exploded multi-genre fields for cleaner analysis
+- Filtered outlier values to improve visualization clarity
+- Stored cleaned datasets in SQLite tables for query support
+
+---
+
+## 8. 📊 Implementation & Visualizations
+
+- **Notebook Structure**: Each visualization is implemented in a clean, modular format with a markdown introduction, well-labeled code cell, and a human-readable summary of results. This structure supports both learning and storytelling.
+- **Bar Charts**: Highest-grossing films, genre revenue, and ratings by decade
+- **Heatmaps**: Genre frequency over time
+- **Scatterplots**: Runtime vs. revenue, IMDb rating vs. box office
+- **Labeling & Styling**: Thoughtfully styled with professional fonts, formatting, and consistent visual theming
+- **Target Audience**: Movie lovers and aspiring analysts
+
+---
+
+## 9. ✨ Stretch Goals
+
+- **Word Cloud**: Originally intended to visualize film summaries — deferred due to limited plot data availability
+- **Tableau Dashboard**: Potential future feature for interactive drill-down
+
+---
+
+## 10. 🚧 Risk Assessment
+
+- **API Rate Limits**: Required retries and lightweight caching
+- **Data Gaps**: Some films lacked complete metadata and were filtered
+- **Outliers**: Extremely long runtimes or high/low box office removed to enhance readability
+- **Genre Variability**: Multi-genre films required parsing and careful grouping
+
+---
+
+## 11. 🧠 Review & Interpretation
+
+- *Drama* dominates across decades but newer genres like *Fantasy* and *Adventure* are on the rise
+- Box office revenue doesn’t guarantee Oscar wins — and IMDb ratings don’t guarantee revenue
+- The Academy’s tastes have broadened over time, reflecting cultural, economic, and artistic shifts
+
+---
+
+## 12. ✅ Final Status & Next Steps
+
+- All visualizations and documentation complete
+- Final cleaning and markdown alignment finished
+- Ready for review and publishing
+
+📅 **Submitted:** March 28, 2025  
+🧠 **Reflects:** Analytical growth, storytelling precision, and a lifelong love for film 🍿

@@ -89,8 +89,10 @@ cd code-you-capstone
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # Mac/Linux
-venv\Scripts\activate   # Windows
+# Mac/Linux
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
 ```
 
 ### 3️⃣ Install Dependencies

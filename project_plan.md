@@ -44,7 +44,7 @@ What trends and patterns can be identified among Oscar-nominated and winning fil
 
 ---
 
-## 6. 📦 Feature Selection (Assignment Requirement)
+## 6. 📦 Feature Selection
 
 This project includes:
 
@@ -53,6 +53,7 @@ This project includes:
 - ✅ Database integration via SQLite with structured tables
 - ✅ Use of Matplotlib and Seaborn for static visualizations
 - ✅ Feature selection across multiple categories: genre, revenue, ratings, runtime, and decade
+- ✅ Initiation of a virtual environment
 
 ---
 

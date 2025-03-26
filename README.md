@@ -5,6 +5,27 @@
 
 ---
 
+## 📣 Project Summary
+
+This project offers a fun and data-driven deep dive into **Academy Award-nominated and winning films**, with a spotlight on the **Best Picture** category.
+
+Combining **web scraping**, **API integration**, **data cleaning**, and **visual storytelling**, this project explores:
+
+- 🎭 Genre trends across decades
+- 💵 Box office performance vs. critical acclaim
+- 📊 Runtime, ratings, and revenue relationships
+
+Built in **Python** with `pandas`, `BeautifulSoup`, `matplotlib`, and **SQLite**, it features:
+
+- Heatmaps, scatterplots, and bar charts
+- Custom formatting for readability
+- A clean, modular Jupyter Notebook structure
+
+Whether you're a **movie buff**, **data scientist in training**, or just curious about what makes a film "Oscar-worthy," this project offers both insight and entertainment. 🍿
+
+➡️ [Explore the notebook](academy_awards_analysis.ipynb)  
+➡️ [Read the full project plan](project_plan.md)
+
 ## 📌 Project Overview
 
 This project analyzes historical trends among **Academy Award-nominated and winning films**, with a special focus on the **Best Picture** category. Using web scraping, API calls, SQL database storage, and a range of visualizations, it explores:

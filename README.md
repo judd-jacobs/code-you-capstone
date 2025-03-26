@@ -142,4 +142,4 @@ AI tools including ChatGPT and Google Gemini were used to support brainstorming,
 
 - [Project Plan](project_plan.md)
 - [Data Dictionary](data_dictionary.md)
-- [Jupyter Notebook](academy_awards_analysis.ipynb)
+- [Academy Awards Analysis Notebook](academy_awards_analysis.ipynb)

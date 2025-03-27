@@ -76,4 +76,8 @@ These are generated temporarily and are not stored in the final SQLite database.
 
 📌 Note: Fields such as `genre`, `boxOffice_clean`, and `runtime_mins` were created or transformed specifically for visualization purposes and do not appear in raw API outputs.
 
+---
+
+## 📎 Additional Documentation
+
 - [README](README.md)

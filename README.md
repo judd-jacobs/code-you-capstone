@@ -126,15 +126,21 @@ deactivate
 
 ---
 
-## 📄 License
+## 📄 License & Disclaimers
 
 This project is open-source under the **MIT License**.
 
----
+**About the MIT License:**  
+The MIT License is a permissive open-source license that allows users to freely use, modify, and distribute the software. Users must include the original license text with the software but are not restricted in their use of the code.
 
-## 🤖 AI Disclaimer
+**Educational Purpose Disclaimer:**  
+This repository was created purely for educational and instructional purposes as part of a data analytics capstone project. It includes data gathered through publicly accessible sources (Wikipedia, TMDb, OMDb) intended solely for non-commercial, analytical, and educational usage. All rights to the original data belong to the respective content providers and copyright holders.
 
-AI tools including ChatGPT and Google Gemini were used to support brainstorming, troubleshooting, and documentation during development.
+**Fair Use & Data Collection:**  
+Web scraping conducted in this project respects the robots.txt guidelines provided by the scraped sources. Users should be aware of and adhere to the terms of use specified by Wikipedia, TMDb, OMDb, and other data providers when using or modifying this project.
+
+🤖 **AI Co-Intelligence Disclosure:**  
+AI tools, including ChatGPT and Google Gemini, were utilized as co-intelligence resources during the development of this project to support brainstorming, troubleshooting, and documentation processes. The project creator retains accountability for all final code, analysis, and project outcomes.
 
 ---
 

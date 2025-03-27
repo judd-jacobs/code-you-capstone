@@ -111,4 +111,8 @@ This project includes:
 📅 **Submitted:** March 28, 2025  
 🧠 **Reflects:** Analytical growth, storytelling precision, and a lifelong love for film 🍿
 
+---
+
+## 📎 Additional Documentation
+
 - [README](README.md)
